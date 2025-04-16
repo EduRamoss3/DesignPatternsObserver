@@ -43,11 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\User.cs" />
+    <Compile Include="Observer\ScheduleConcrectObserver.cs" />
+    <Compile Include="Observer\Subjects\Product.cs" />
+    <Compile Include="Observer\Subjects\Schedules.cs" />
+    <Compile Include="Observer\UserConcretObserver.cs" />
+    <Compile Include="Observer\Interfaces\IObserver.cs" />
+    <Compile Include="Observer\Interfaces\ISubject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
